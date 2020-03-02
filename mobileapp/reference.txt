@@ -1,0 +1,107 @@
+Application Inspiration: Vodaphone Secrect Voice Recorder
+
+!! CHECK TRY AND CATCHES -- MIGHT HAVE USED THE WRONG TYPE OF EXCEPTION
+
+ <service android:name="CLASSNAME"
+        enabled="true"" /> Create a service for shake event
+
+CREATE NEW CLASS, LISTEN ALWAYS TO A SHAKE EVENT AND START RECORDING WHEN SHAKING IS DONE
+
+** Create an if to check if SD card exists, if not save in device
+
+progress and last progress work like a basic java 2 variable counter
+
+Check about SeekBar info
+
+1. Take note on relativeLayout, instead of constraint layout.
+
+@RequiresApi - Denotes that the annotated element should only be called on the given API level or higher.
+Persmissions for marshmellow and higher:
+	https://developer.android.com/training/permissions/requesting.html
+
+
+You might already feel like there is some cold wind blowing through your arms ... If you are an Android Developer, 
+you will suddenly know that programming logic is totally changed. You cannot just call a function to do the job like previous 
+but you have to check for the permission for every single feature or your application will just simply crash !
+
+FIXING THE REQUEST PERMISION FOR RECORD_AUDIO_REQUEST_CODE: 
+	https://inthecheesefactory.com/blog/things-you-need-to-know-about-android-m-permission-developer-edition/en
+	--->> initializing a default code for RECORD_AUDIO_REQUEST_CODE equal to 123 (link above for explaination)
+	
+	No matter Allow or Deny is chosen, Activity's onRequestPermissionsResult will always be called to inform a result 
+	which we can check from the 3rd parameter, grantResults, like this: (add image of onRequestPermissionResult method)
+	
+	https://developer.android.com/reference/android/support/v4/app/ActivityCompat.OnRequestPermissionsResultCallback.html
+	https://stackoverflow.com/questions/32714787/android-m-permissions-onrequestpermissionsresult-not-being-called
+
+Save and use external ssd path
+	https://stackoverflow.com/questions/5453708/android-how-to-use-environment-getexternalstoragedirectory
+
+Set Audio Encoder
+
+Sudden Common Error Handling
+	https://stackoverflow.com/questions/26515058/this-activity-already-has-an-action-bar-supplied-by-the-window-decor
+	https://developer.android.com/reference/android/media/MediaRecorder.AudioEncoder.html
+
+Using Chronometer
+	http://abhiandroid.com/ui/chronometer
+
+Recycle View Tutorial
+	https://www.simplifiedcoding.net/android-recyclerview-cardview-tutorial/
+
+Mediaplayer usage - stop - pause
+	https://stackoverflow.com/questions/15045750/how-to-properly-release-android-mediaplayer
+
+Creating list with RecycleView
+	https://developer.android.com/guide/topics/ui/layout/recyclerview.html
+
+Get view from Current Activity (R.id.content)
+	https://stackoverflow.com/questions/4486034/get-root-view-from-current-activity
+
+TransitionManager Details
+
+Select Button Between Images
+	android:background="?android:attr/selectableItemBackground"
+	
+To use Recycler View Error solved
+	https://stackoverflow.com/questions/24440852/how-to-import-recyclerview-for-android-l-preview
+
+mkdirs() -- in case the file does not exist to avoid crash
+	https://docs.oracle.com/javase/6/docs/api/java/io/File.html#mkdirs%28%29
+
+Main Techniques Used and Inspired From
+	Android Programming for Beginners - by John Horton
+	Extremely good writting style, very detailed information on how to build what I need
+
+On boot broadcast receiver
+	https://stackoverflow.com/questions/20595337/how-to-start-service-at-device-boot-in-android
+
+Service
+	https://developer.android.com/reference/android/app/Service.html
+
+Sensor Manager
+	https://developer.android.com/reference/android/hardware/SensorManager.html
+Example Service Event
+	https://androidammy.blogspot.co.uk/2015/05/accelerometer-shake-events-example-with.html
+
+Audio Recorder Max duration
+	https://stackoverflow.com/questions/3227122/mediarecorder-setmaxdurationint-timer-what-happens-when-timer-expires
+	
+Audio Format
+	https://developer.android.com/guide/topics/media/media-formats.html
+
+SeekBar
+	http://abhiandroid.com/ui/seekbar
+	http://mrbool.com/how-to-play-audio-files-in-android-with-a-seekbar-feature-and-mediaplayer-class/28243
+	https://stackoverflow.com/questions/8956218/android-seekbar-setonseekbarchangelistener
+
+Accelerometer Detect
+	https://stackoverflow.com/questions/2317428/android-i-want-to-shake-it
+
+Manish Kumar - Guide
+	https://www.simplifiedcoding.net/audio-recording-android-example/
+
+
+
+	
+	
